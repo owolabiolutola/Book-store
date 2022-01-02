@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tailwind-css</title>
+
+  <link rel="stylesheet" href ="css/style.css">
+</head>
+<body>
+
+  <div class="w-auto h-auto bg-yellow-200 mt-10 ml-6 border-2">
+
+ <h1 class="text-red-200 flex justify-center ">Tola's book store</h1>
+ <p class="flex justify-center"> A place to get all your favourite technical books. </p>
+
+ <div> 
+  
+    <div class= "flex flex-row items-center  w-4/5  px-2  py-2 border border-gray-500 ml-4 flex-grow mt-4 "> 
+      
+        <input type="text"
+        name="Search"
+        placeholder="Search by tags e.g Java, python..."
+        autocomplete="off"
+        aria-label="Search for publishers"
+        class=" pr-3 pl-1 placeholder-gray-500 flex-grow focus:outline-none text black border-none font-light w-full text-orange-brown-50"  id="searchbox" />
+
+        <button onclick="handleClick()">
+          <svg  xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 bg-black searchicon pointer-events-none mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>  
+          </button>
+      
+      </div>        
+          
+       <div id="booklist"> 
+
+        </div>
+
+
+
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+<script src="search.js">  </script>
+
+<script src="app.js">  </script>
+
+</body>
+</html>
